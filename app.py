@@ -36,7 +36,7 @@ def extract_and_match_frames(img_url, vid_url, max_frames=50):
         min_val, max_val, _, _ = cv2.minMaxLoc(correlation)
 
         # Puedes ajustar este umbral según tus necesidades
-        similarity_threshold = 0.7
+        similarity_threshold = 0.5
 
         if max_val > similarity_threshold:
             cap.release()
