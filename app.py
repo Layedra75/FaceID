@@ -49,7 +49,7 @@ def extract_and_match_frames(img_url, vid_url, max_frames=50):
     result = {"similarity": 0, "match_status": "No coinciden", "image_url": img_url, "video_url": vid_url}
     return result
 
-@app.route('/api', methods=['POST'])
+@app.route('/', methods=['POST'])
 def process_request():
     img_url = request.json['image_url']
     vid_url = request.json['video_url']
